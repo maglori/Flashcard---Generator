@@ -11,9 +11,10 @@ var ClozeCard = function(text, cloze) {
 ClozeCard.prototype["cloze-deleter"] = function(){
     if (this["text"].includes(this["cloze"])) {
         this["partial"] = this["text"].replace(this["cloze"], ". . .")
-        console.log(this["partial"])
+        console.log("Question: " + this["partial"]);
+        console.log("Answer: " + this["cloze"]);
     } else {
-        console.log("that ain't right");
+        console.log("That ain't right");
     }
 };
 

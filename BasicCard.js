@@ -8,11 +8,11 @@ var BasicCard = function (front, back) {
 };
 
 BasicCard.prototype["displayFront"] = function () {
-     console.log(this["front"])
+     console.log("Question: " + this["front"])
 }
 
 BasicCard.prototype["displayBack"] = function () {
-     console.log(this["back"])
+     console.log("Answer: " + this["back"])
 }
 
 module.exports = BasicCard;
